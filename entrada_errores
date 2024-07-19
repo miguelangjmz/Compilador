@@ -1,0 +1,82 @@
+// El objetivo de este documento es que, cuando se deje una sección sin comentar, se puedan ver los errores.
+prueba() {
+	// Cosas bien declaradas
+	var aa = 9;
+	const jj = 10;
+
+	// Redefinir una variable
+	var a; 
+	var a;
+	
+	// Redefinir variable asignando valor
+	var b;
+	var b = 4;
+
+	// Redefinir constante
+	const c = 9;
+	const c = 10;
+
+	// Redefinir variable como constante
+	var d = 9;
+	const d = 9;
+
+	// Declaracion constante posteriormente
+	const e;
+	e = 10;
+
+	// Si la variable no está declarada 
+	f = 3;
+
+	// Si usamos un valor que no existe
+	a = h + 3;
+
+	// Si queremos redefinir una constante
+	jj = aa + 45;
+
+	// Si leemos en una varaible que no está declarada
+	read(f);
+
+	// Si leemos en una constante
+	read(jj);
+
+	// Expresiones con variables no declaradas
+	aa = h;
+
+	// Error en condición de if-else
+	if(+){
+		print("a");
+		print("\n");
+	} else {
+		print("b");
+		print("\n");
+	}
+
+	// Error en condición de if
+	if(+){
+		print("a");
+		print("\n");
+	}
+
+	// Error en condición de while
+	while(+){
+		print("a");
+		print("\n");
+	}
+
+	// Error en condición de do-while
+	do{
+		print("a");
+		print("\n");
+	} while(+);
+
+	// Error en condición de for
+	for(aa:1:+:1){
+		print("a");
+		print("\n");
+	}
+
+	// Error en print
+	print(+);
+
+	// Error en read
+	read(+);
